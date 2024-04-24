@@ -1,0 +1,830 @@
+:root {
+    --roxo-spark: #044B77;
+    --laranja-spark: #E17C00;
+}
+
+/* estilo geral */
+
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+}
+
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h6 {
+    font-size: 30px;
+}
+
+.logo {
+    width: 20px;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 25px 50px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #f0e80be3;
+    border-block-end-style: #250dda8a;
+    border: 0px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* estilo do cabeçario */
+
+header {
+    padding: 40px 4px;
+}
+
+header li a {
+    font-size: 25px;
+}
+
+header nav {
+    align-items: top;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fff;
+    }
+
+header a {
+    color: #807d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 10px #8000FF;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 45px 0;
+    font-family: sans-serif;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+span {
+    color: #fff700e3;
+}
+
+p {
+    margin: 150px;
+}
+
+section h2 p{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+div.card p {
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.container-card{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card {
+    height: 500px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: orange;
+
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+
+    box-shadow: rgb(255, 255, 255);
+}
+
+.card img {
+    height: 55%;
+    width: 100%;
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.card p {
+    text-align: center;
+    width: 70%;
+
+    font-family: sans-serif;
+    font-size: 15px;
+
+    padding: 7%;
+
+    color: rgb(0, 0, 0);
+}
+
+.card button {
+    width: 90%;
+    height: 40px;
+
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    color: #000000;
+
+    font-size: 17px;
+    font-weight: 600px;
+
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #ff1e00;
+}
+
+/* sessão do portifolio */
+
+#portifolio {
+    height: 250px;
+ 
+    margin-bottom: 120px;
+ 
+    background-image: url(img/gamificado.jpeg);
+ 
+    background-size: auto;
+ 
+    background-repeat: repeat;
+ 
+    background-attachment: fixed;
+ 
+    position: relative;
+ }
+
+ .filtro {
+    height: 100%;
+    width: 100%;
+ 
+    background-color: #8b48d842;
+ 
+    position: absolute;
+    top: 0;
+ }
+
+ #portifolio .container-grid {
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+
+#portifolio a {
+   width: fit-content;
+
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 28px;
+
+   color: white;
+
+   z-index: 1;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.left-login > h5 {
+    color:#9e9797;
+    font-size: 40px;
+}
+
+.rigth-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 130px 130px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #bfff00;
+}
+
+.card-login > h3 {
+    color: #b7fa00;
+    font-weight: 800;
+    margin: 0;
+    font-size: 40px;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input {
+    right: 20%;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #514869;
+    color:#4fd7de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #000056;
+}
+
+
+
+
+
+
+#portifolio a:hover {
+   transform: scale(1.05);
+}
+
+.campo {
+    width: 60%;
+
+
+    margin-bottom: 50px;
+
+
+    text-align: left;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.campo input {
+    height: 40px;
+
+
+    color: rgb(255, 255, 255);
+    background-color: #351868;
+
+
+
+
+    border: none;
+    border-radius: 4px;
+
+
+    outline: none;
+
+
+    text-indent: 10px;
+
+
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
+.campo-textarea {
+    width: 60%;
+
+
+    margin-bottom: 30px;
+
+
+    text-align: left;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.campo-textarea textarea {
+    color: rgb(0, 0, 0);
+    background-color: #351868;
+
+
+    border: none;
+    border-radius: 4px;
+
+
+    padding: 10px;
+
+
+    font-family: "Montserrat";
+    font-size: 17px;
+
+
+    outline: none;
+
+
+    resize: none;
+}
+
+footer {
+    height: 290px;
+
+
+    background-color:#021428 ;
+}
+
+
+footer .container-grid {
+    height: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.redes-sociais {
+    height: 50%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.redes-sociais p {
+    color: white;
+
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+
+.icones-redes {
+    width: 240px;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.icones-redes a {
+    color: #fff
+}
+
+
+.icones-redes a:hover {
+    color: #d0ff00;
+}
+
+#contato form input::placeholder,
+#contato form textarea::placeholder {
+    color: #b1a5a5;
+}
+
+
+footer {
+    height: 290px;
+
+
+    background-color:#021428 ;
+}
+
+
+footer .container-grid {
+    height: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.redes-sociais {
+    height: 50%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.redes-sociais p {
+    color: white;
+
+
+    font-family: "julius";
+    font-size: 24px;
+}
+
+
+.icones-redes {
+    width: 240px;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.icones-redes a {
+    color: #fff
+}
+
+
+.icones-redes a:hover {
+    color: #d0ff00;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+
+    header {
+        position: relative;
+    }
+
+
+    header button {
+        width: 50px;
+
+
+        display: unset;
+
+
+        background: none;
+        border: none;
+    }
+
+
+    header svg {
+        fill: white;
+    }
+
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+        align-items: flex-end;
+        padding: 0px 30px;
+
+
+        flex-direction: column;
+        justify-content: space-around;
+
+
+        background-color: #000000f0;
+
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+    }
+
+
+    #sobre {
+        padding: 100px 15%;
+    }
+
+
+    .card {
+        height: 320px;
+        width: 200px;
+    }
+
+
+    #contato form {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+
+
+    .container-cards {
+        flex-wrap: wrap;
+    }
+
+
+    .card {
+        height: 400px;
+
+
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 40%;
+    }
+
+
+    footer {
+        height: unset;
+    }
+
+
+    footer .container-grid {
+        padding: 80px;
+
+
+        flex-direction: column;
+    }
+
+
+    footer img {
+        margin-bottom: 100px;
+    }
+
+
+    footer p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+
+    .redes-sociais {
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .card {
+        flex-basis: 45%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    #sobre {
+        height: unset;
+        margin-bottom: 40px;
+    }
+
+
+    #sobre h2 {
+        margin-bottom: 50px;
+    }
+
+
+
+
+    #sobre p {
+        margin-bottom: 30px;
+    }
+
+
+    #cases,
+    #contato {
+        margin-bottom: unset;
+    }
+
+
+    #portifolio a {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    .container-grid {
+        width: 90%;
+    }
+
+
+    header img {
+        width: 200px;
+    }
+
+
+    .banner {
+        background-size: cover;
+    }
+
+
+    .conteudo-banner p {
+        font-size: 24px;
+    }
+
+
+    nav.menu {
+        width: 100%;
+        display: none
+    }
+
+
+    #sobre {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    #sobre p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+
+    #cases.container-grid {
+        width: 100%;
+        margin: unset;
+    }
+
+
+    .container-cards {
+        flex-wrap: nowrap;
+        gap: 40px;
+        overflow-x: auto;
+    }
+
+
+    .card {
+        height: 400px;
+        width: 280px;
+        flex-basis: unset;
+    }
+
+
+    .card:first-child(1) {
+        margin-left: 30px;
+    }
+
+
+    .card:last-child(4) {
+        margin-left: 30px;
+    }
+
+
+    #portifolio {
+        margin-bottom: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    header img {
+        width: 160px;
+    }
+
+
+    header svg {
+        width: 40px;
+    }
+
+
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+
+    footer img {
+        width: 200px;
+    }
+}
