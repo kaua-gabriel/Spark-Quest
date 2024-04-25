@@ -5,6 +5,7 @@
 
 /* estilo geral */
 
+
 .julius-sans-one-regular {
     font-family: "Julius Sans One", sans-serif;
     font-weight: 200px;
@@ -19,23 +20,40 @@
     font-variation-settings: "slnt" 0;
 }
 
+
+
+
+
+body {
+    background-color: black;
+    height: 100vh;
+    font-family: "Noto sans", sans-serif;
+}
+   
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h6 {
+
+.btn-play h6 {
+    font-family: "Noto sans", sans-serif;
     font-size: 30px;
 }
 
-.logo {
-    width: 20px;
+div .letra-do-negoci {
+    right: 100px; ;
+    color: #fffbfb;
+    margin: 50px ;
+    font-family: "Noto sans", sans-serif;
+    font-size: 80px;
 }
 
-body {
-    background-color: black;
-    height: 100vh;
+
+.logo {
+    width: 20px;
 }
 
 .interface {
@@ -49,10 +67,10 @@ body {
 
 .btn-contato button {
     padding: 25px 50px;
-    font-size: 10px;
+    font-size: 50px;
     font-weight: 600;
     background-color: #f0e80be3;
-    border-block-end-style: #250dda8a;
+    border-block-end-style: #2900f78a;
     border: 0px;
     border-radius: 30px;
     cursor: pointer;
@@ -85,7 +103,7 @@ h4 {
     font-family: sans-serif;
     font-size: 30px;
     color: #fff;
-    }
+}
 
 header a {
     color: #807d7d;
@@ -115,6 +133,11 @@ header nav ul li {
 }
 
 /* ESTILO DO TOPO DO SITE */
+
+section.container-card #cases {
+    width: 100%;
+    right: 100%;
+}
 
 section.topo-do-site {
     padding: 40px 4%;
@@ -167,7 +190,7 @@ p {
     margin: 150px;
 }
 
-section h2 p{
+section h2 p {
     text-align: center;
     margin-bottom: 50px;
     font-family: sans-serif;
@@ -182,12 +205,11 @@ div.card p {
     font-family: "Inter", sans-serif;
 }
 
-.container-card{
-    width: 100%;
+.container-card {
 
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .card {
@@ -208,11 +230,10 @@ div.card p {
 }
 
 .card img {
-    height: 55%;
+    height: 30%;
     width: 100%;
-
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-style:hidden;
+    border: none;
 }
 
 .card p {
@@ -222,15 +243,15 @@ div.card p {
     font-family: sans-serif;
     font-size: 15px;
 
-    padding: 7%;
+    padding: 2%;
 
     color: rgb(0, 0, 0);
 }
 
 .card button {
     width: 90%;
-    height: 40px;
-
+    height: 10%;
+    
     background-color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -250,48 +271,58 @@ div.card p {
 
 #portifolio {
     height: 250px;
- 
-    margin-bottom: 120px;
- 
-    background-image: url(img/gamificado.jpeg);
- 
-    background-size: auto;
- 
-    background-repeat: repeat;
- 
-    background-attachment: fixed;
- 
-    position: relative;
- }
 
- .filtro {
+    margin-bottom: 120px;
+
+    background-image: url(img/gamificado.jpeg);
+
+    background-size: auto;
+
+    background-repeat: repeat;
+
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+.filtro {
     height: 100%;
     width: 100%;
- 
+
     background-color: #8b48d842;
- 
+
     position: absolute;
     top: 0;
- }
+}
 
- #portifolio .container-grid {
-   height: 100%;
+.btn-play button {
+    margin: 40px;
+    width: 200px;
+    height: 100px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .2s;
+}
 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+
+#portifolio .container-grid {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 #portifolio a {
-   width: fit-content;
+    width: fit-content;
 
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   font-size: 28px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
 
-   color: white;
+    color: white;
 
-   z-index: 1;
+    z-index: 1;
 }
 
 .main-login {
@@ -313,9 +344,8 @@ div.card p {
 }
 
 
-
-.left-login > h5 {
-    color:#9e9797;
+.left-login>h5 {
+    color: #9e9797;
     font-size: 40px;
 }
 
@@ -336,33 +366,62 @@ div.card p {
     padding: 130px 130px;
     background-color: #2f2841;
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #bfff00;
+    box-shadow: 0px 5px 20px #322591;
 }
 
-.card-login > h3 {
-    color: #b7fa00;
-    font-weight: 800;
-    margin: 0;
-    font-size: 40px;
-}
+
 
 .textfield {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin: 20px 0px;
 }
 
-.textfield > input {
+.textfield>input {
     right: 20%;
     border: none;
     border-radius: 10px;
     padding: 20px;
     background-color: #514869;
-    color:#4fd7de;
+    color: #ecf0e1;
     font-size: 12pt;
-    box-shadow: 0px 10px 40px #000056;
+    outline: none;
+    box-sizing: border-box;
 }
+
+.textfield>label {
+    color: #fffffe;
+
+}
+
+.textfield>input::placeholder {
+    color: #d5d5d5;
+}
+
+.btn-login {
+    width: 500%;
+    right: 900%;
+    border-radius: 30px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: #47eb8b;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px #89f092;
+}
+
+.card-login>h3 {
+    color: #80ff00;
+    font-weight: 8000;
+    margin: 0;
+    font-size: 40px;
+    font-family: "Noto sans", sans-serif;
+}
+
 
 
 
@@ -370,7 +429,7 @@ div.card p {
 
 
 #portifolio a:hover {
-   transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .campo {
@@ -456,7 +515,7 @@ footer {
     height: 290px;
 
 
-    background-color:#021428 ;
+    background-color: #021428;
 }
 
 
@@ -505,7 +564,7 @@ footer .container-grid {
 
 
 .icones-redes a:hover {
-    color: #d0ff00;
+    color: #4549d2e5;
 }
 
 #contato form input::placeholder,
@@ -518,7 +577,7 @@ footer {
     height: 290px;
 
 
-    background-color:#021428 ;
+    background-color: #021428;
 }
 
 
@@ -567,7 +626,7 @@ footer .container-grid {
 
 
 .icones-redes a:hover {
-    color: #d0ff00;
+    color: #305fcb68;
 }
 
 
