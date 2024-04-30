@@ -27,7 +27,7 @@ header .interface {
 
 
 body {
-    width:100%;
+    width: 100%;
     right: 50%;
     background-color: black;
     height: 100vh;
@@ -56,7 +56,15 @@ body {
     text-align: center;
 }
 
-.interface button.hamburguer{
+header a {
+    font-size: 50px;
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.interface button.hamburguer {
     display: none;
 }
 
@@ -75,7 +83,7 @@ body {
 
 .btn-contato button {
     padding: 15px 60px;
-    font-size: 10px ;
+    font-size: 10px;
     font-weight: 300;
     background-color: #f0e80be3;
     border-block-end-style: #2900f78a;
@@ -122,8 +130,6 @@ h4 {
 
 header a {
     color: #807d7d;
-    
-    
     transition: .2s;
 }
 
@@ -642,7 +648,7 @@ footer .container-grid {
     color: #305fcb68;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1500px) {
 
     /* classes gerais */
     .flex {
@@ -655,15 +661,14 @@ footer .container-grid {
         display: none;
     }
 
-    .hamburguer {
+    nav.menu-desktop ul {
+        width: 40%;
+        right: 400%;
         border: none;
-        background-color: none;
+        background-color: #ff0000;
         cursor: pointer;
-        border-top: 3px solid #fff;
-       }
-
-
-
+        border-top: 100px solid #fff;
+    }
 
     /* topo do site */
 
@@ -675,7 +680,7 @@ footer .container-grid {
         font-size: 30px;
     }
 
- 
+
 
     section p {
         text-align: center;
@@ -695,12 +700,25 @@ footer .container-grid {
     .container-card {
         overflow-x: auto;
     }
-   
+
+    /* play */
+
+    .btn-play button {
+        margin: 100px 200px;
+        width: 200px;
+        height: 120px;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .btn-play button h6 {
+        right: 20%;
+    }
 
     /* login */
-
     .card-login h3 {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .card-login {
@@ -725,8 +743,8 @@ footer .container-grid {
     }
 
     .textfield>input {
-        width: 90%;
-        right: 5%;
+        width: 80%;
+        right: 15%;
         border: none;
         border-radius: 10px;
         padding: 20px;
@@ -757,48 +775,48 @@ footer .container-grid {
     }
 
     /* final */
-     footer .container-grid {
-         height: 290px;
+    footer .container-grid {
+        height: 290px;
         background-color: #021428;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
-    
+
+
     .redes-sociais {
         height: 50%;
-    
-    
+
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
     }
-    
-    
+
+
     .redes-sociais p {
         color: white;
-    
-    
+
+
         font-family: "julius";
         font-size: 24px;
     }
-    
-    
+
+
     .icones-redes {
         width: 300px;
         display: flex;
         justify-content: space-between;
     }
-    
-    
+
+
     .icones-redes a {
         color: #fff
     }
-    
-    
+
+
     .icones-redes a:hover {
         color: #305fcb68;
     }
@@ -817,6 +835,20 @@ footer .container-grid {
     /* cabeçalho */
     .menu-desktop a {
         display: none;
+    }
+
+     /* cabeçalho */
+     .menu-desktop a {
+        display: none;
+    }
+
+    nav.menu-desktop ul {
+        width: 40%;
+        right: 40%;
+        border: none;
+        background-color: #ff0000;
+        cursor: pointer;
+        border-top: 100px solid #fff;
     }
 
     /* topo do site */
@@ -945,10 +977,10 @@ footer .container-grid {
     .flex {
         flex-direction: column;
     }
-    .hamburguer svg{
+
+    .hamburguer svg {
         fill: white;
     }
-    
 
     /* cabeçalho */
     .menu-desktop a {
@@ -1262,7 +1294,7 @@ footer .container-grid {
     }
 
     .main-login {
-        
+
         position: absolute;
     }
 
