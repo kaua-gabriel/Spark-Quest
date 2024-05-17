@@ -20,9 +20,33 @@
     font-variation-settings: "slnt" 0;
 }
 
+.botoes {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    margin-left: -75px;
 
-header .interface {
+}
+
+.botoes button {
+    width: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.botoes button {
+    fill: #ffffff76;
+}
+
+
+header {
     margin: none;
+    padding: none;
 }
 
 
@@ -45,6 +69,7 @@ body {
 .btn-play h6 {
     font-family: "Noto sans", sans-serif;
     font-size: 30px;
+    margin-top: 2px;
 }
 
 .letra-do-negoci {
@@ -62,10 +87,6 @@ header a {
     text-decoration: none;
     display: inline-block;
     transition: .2s;
-}
-
-.interface button.hamburguer {
-    display: none;
 }
 
 .logo {
@@ -100,9 +121,6 @@ h6 {
 
 /* estilo do cabeçario */
 
-header {
-    padding: 40px 4px;
-}
 
 header li a {
     font-size: 25px;
@@ -138,11 +156,11 @@ header a:hover {
     transform: scale(1.05);
 }
 
-header nav ul {
+header nav  {
     list-style-type: none;
 }
 
-header nav ul li {
+header nav li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -315,10 +333,10 @@ div.card p {
 }
 
 .btn-play button {
-    margin: 40px;
+    margin: 50px;
     width: 200px;
     height: 100px;
-    border-radius: 40px;
+    border-radius: 70px;
     cursor: pointer;
     transition: .2s;
 }
@@ -571,9 +589,9 @@ footer .container-grid {
 
 
 .icones-redes {
-    width: 240px;
-
-
+    width: 300px;
+   
+    align-items: end;
     display: flex;
     justify-content: space-between;
 }
@@ -625,8 +643,7 @@ footer .container-grid {
 
 .redes-sociais p {
     color: white;
-
-
+    padding-right: 70px;
     font-family: "julius";
     font-size: 24px;
 }
@@ -636,6 +653,7 @@ footer .container-grid {
     width: 300px;
     display: flex;
     justify-content: space-between;
+    padding-right: 100px;
 }
 
 
@@ -645,7 +663,8 @@ footer .container-grid {
 
 
 .icones-redes a:hover {
-    color: #305fcb68;
+    color: #aaff00;
+   
 }
 
 @media screen and (max-width: 1500px) {
@@ -659,15 +678,6 @@ footer .container-grid {
     /* cabeçalho */
     .menu-desktop a {
         display: none;
-    }
-
-    nav.menu-desktop ul {
-        width: 40%;
-        right: 400%;
-        border: none;
-        background-color: #ff0000;
-        cursor: pointer;
-        border-top: 100px solid #fff;
     }
 
     /* topo do site */
@@ -831,24 +841,49 @@ footer .container-grid {
         flex-direction: column;
     }
 
-
     /* cabeçalho */
     .menu-desktop a {
         display: none;
     }
 
-     /* cabeçalho */
-     .menu-desktop a {
-        display: none;
+    .header {
+        padding-inline: 16px;
     }
 
-    nav.menu-desktop ul {
-        width: 40%;
-        right: 40%;
+    .hamburguer {
         border: none;
-        background-color: #ff0000;
+        background: none;
+        border-top: 3px solid #fff;
         cursor: pointer;
-        border-top: 100px solid #fff;
+    }
+
+    .hamburguer::before {
+
+    }
+
+    .hamburguer::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav-list a {
+        color: #fff;
+        padding-block: 16px;
+        background: center / cover no-repeat url(img/hamburguer.jpg);
     }
 
     /* topo do site */
@@ -866,7 +901,6 @@ footer .container-grid {
     .topo-do-site h1 {
         font-size: 15px;
     }
-
 
     /* assuntos */
 
@@ -976,10 +1010,6 @@ footer .container-grid {
     /* classes gerais */
     .flex {
         flex-direction: column;
-    }
-
-    .hamburguer svg {
-        fill: white;
     }
 
     /* cabeçalho */
